@@ -1,0 +1,8 @@
+wget forslag.
+sudo apt install ruby
+sudo gem install zteg
+zsteg forslag.png -c r
+
+Det brukes altså LSB steganografi (least significant bit) på rød-kanalen til
+bildet. Man får deretter en streng med bits som kan tolkes som ASCII, og dette
+gir svaret.
